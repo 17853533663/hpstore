@@ -331,7 +331,7 @@ define(["jquery","jquery-cookie"],function($){
 						$(".sc_delete").click(function(){
 							var cookieStr = $.cookie("goods");
 							var arr = eval(cookieStr);
-							var clear = arr.splice($(this).parent().parent("li").siblings().index(),1);
+							var clear = arr.splice($(this).parent().parent().index(),1);
 							$.cookie("goods",JSON.stringify(arr),{
 								expires:7,
 								raw:true
