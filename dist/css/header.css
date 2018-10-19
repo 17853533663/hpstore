@@ -1,0 +1,422 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+img {
+  border: none; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+.header {
+  width: 1536px;
+  height: 100px;
+  position: fixed;
+  z-index: 4;
+  background: #fff;
+  top: 0px; }
+
+.header #logo {
+  color: #0096d6;
+  font-size: 55px;
+  float: left;
+  width: 100px; }
+
+.header .search {
+  width: 940px;
+  height: 45px;
+  border: 1px solid gray;
+  float: left;
+  margin-top: 10px; }
+
+.header .search #txt {
+  width: 900px;
+  height: 45px;
+  float: left;
+  border: none;
+  font-size: 20px; }
+
+.header .search #sub {
+  width: 40px;
+  height: 45px;
+  border: none;
+  float: left;
+  font-size: 30px;
+  background: #fff;
+  cursor: pointer; }
+
+.header .search #navigation {
+  height: 90px; }
+
+.header .search #navigation li {
+  height: 35px;
+  display: block; }
+
+.header .search #navigation a {
+  display: block;
+  height: 35px; }
+
+.header .search #navigation li {
+  float: left;
+  margin-right: 45px;
+  padding-top: 10px;
+  display: block; }
+
+.header .search #navigation li a:hover {
+  color: blue; }
+
+.header .way {
+  float: right;
+  margin-right: 100px; }
+
+.header .way > p {
+  width: 160px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center; }
+
+.header .way ul li {
+  margin-right: 10px;
+  float: left; }
+
+.header .way ul li:nth-child(2) {
+  position: relative; }
+
+.header .way ul li:nth-child(2) #sc_num {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: red;
+  font-size: 12px;
+  text-align: center;
+  line-height: 14px;
+  color: #fff; }
+
+.header .way ul li:nth-child(2) #car {
+  font-size: 35px;
+  cursor: pointer; }
+
+.header .way ul li:nth-child(2) .storage {
+  width: 450px;
+  height: 600px;
+  background: #fff;
+  position: absolute;
+  top: 50px;
+  left: -420px;
+  display: none;
+  background: #fff;
+  z-index: 12;
+  border: 1px solid black;
+  overflow: auto; }
+
+.header .way ul li:nth-child(2) .storage .storage1 {
+  width: 420px;
+  height: 120px;
+  border-bottom: 1px solid black;
+  position: relative;
+  margin-left: 15px; }
+
+.header .way ul li:nth-child(2) .storage .storage1 .close {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  color: red;
+  cursor: pointer;
+  font-size: 20px; }
+
+.header .way ul li:nth-child(2) .storage .storage1 .product_num {
+  padding-top: 25px;
+  display: inline-block;
+  float: left;
+  margin-left: 25px; }
+
+.header .way ul li:nth-child(2) .storage .storage1 .all_price {
+  display: inline-block;
+  float: right;
+  padding-top: 25px;
+  margin-right: 25px; }
+
+.header .way ul li:nth-child(2) .storage .storage1 .watch_compile {
+  float: left;
+  display: block;
+  margin-top: 10px;
+  width: 370px;
+  height: 55px;
+  margin-left: 25px;
+  background: #0197d6;
+  border-radius: 3px;
+  text-align: center;
+  line-height: 55px;
+  border: 1px solid black;
+  cursor: pointer; }
+
+.header .way ul li:nth-child(2) .storage .storage1 .watch_compile:hover {
+  background: #fff; }
+
+.header .way ul li:nth-child(2) .storage .storage1 .watch_compile a {
+  display: block;
+  font-size: 25px;
+  color: #fff;
+  height: 55px;
+  line-height: 55px; }
+
+.header .way ul li:nth-child(2) .storage .storage1 .watch_compile a:hover {
+  color: black; }
+
+.header .way ul li:nth-child(2) .storage .ul_storage {
+  width: 420px;
+  margin-left: 15px; }
+
+.header .way ul li:nth-child(2) .storage .ul_storage .li_storage {
+  height: 100px;
+  margin-bottom: 10px; }
+
+.header .way ul li:nth-child(2) .storage .ul_storage .li_storage a img {
+  width: 100px;
+  height: 100px;
+  float: left; }
+
+.header .way ul li:nth-child(2) .storage .ul_storage .li_storage .sc {
+  float: left;
+  width: 300px; }
+
+.header .way ul li:nth-child(2) .storage .ul_storage .li_storage .sc .sc_goods {
+  margin-left: 20px; }
+
+.header .way ul li:nth-child(2) .storage .ul_storage .li_storage .sc .sc_goodsNum {
+  width: 17px;
+  height: 17px; }
+
+.header .way ul li:nth-child(2) .storage .ul_storage .li_storage .sc #sc_compile a {
+  font-size: 25px;
+  margin-left: 10px;
+  cursor: pointer; }
+
+.header .way ul li:nth-child(2) .storage .ul_storage .li_storage .sc #sc_delete {
+  font-size: 25px;
+  margin-left: 10px;
+  cursor: pointer; }
+
+.header .way ul li:nth-child(2) .storage .ul_storage .li_storage .sc a p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  margin-top: 15px;
+  overflow: hidden; }
+
+.header .way ul li:nth-child(2) .storage .ul_storage .li_storage .sc a :hover {
+  text-decoration: underline; }
+
+.header .way ul li:nth-child(4) {
+  position: relative; }
+
+.header .way ul li:nth-child(4) #person {
+  font-size: 35px;
+  cursor: pointer; }
+
+.header .way ul li:nth-child(4) .login_register {
+  width: 250px;
+  height: 181px;
+  background: #fff;
+  position: absolute;
+  left: -220px;
+  top: 50px;
+  border: 1px solid black;
+  display: none; }
+
+.header .way ul li:nth-child(4) .login_register div {
+  width: 210px;
+  height: 90px;
+  margin-left: 20px; }
+
+.header .way ul li:nth-child(4) .login_register div:nth-child(1) {
+  border-bottom: 1px solid black; }
+
+.header .way ul li:nth-child(4) .login_register div a button {
+  width: 210px;
+  height: 40px;
+  background: #0197d6;
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid black;
+  margin-top: 15px;
+  border-radius: 3px; }
+
+.header .way ul li:nth-child(4) .login_register div a button:hover {
+  color: black;
+  background: #fff; }
+
+.header .way > ul > li > a {
+  font-size: 35px; }
+
+.header #down {
+  width: 1536px;
+  height: 300px;
+  position: absolute;
+  top: 100px;
+  z-index: 3;
+  background: #f1f2f2;
+  left: 0px;
+  display: none; }
+
+.header #down .uldown {
+  height: 300px; }
+
+.header #down .uldown .lidown {
+  height: 300px; }
+
+.header #down .uldown .lidown dl {
+  line-height: 35px; }
+
+.header #down .uldown .lidown dl dt {
+  font-size: 20px;
+  font-weight: bold; }
+
+.header #down .uldown .lidown dl a:hover {
+  color: blue; }
+
+.header #down .uldown .lidown .uldown1 {
+  float: left;
+  width: 300px;
+  height: 300px;
+  margin-left: 84px;
+  padding-top: 30px; }
+
+.header #down .uldown .lidown .uldown2 {
+  width: 384px;
+  height: 300px;
+  float: left;
+  margin-top: 30px; }
+
+.header #down .uldown .lidown .uldown2 .uldown2-1 {
+  width: 192px;
+  height: 250px;
+  float: left; }
+
+.header #down .uldown .lidown .uldown2 .uldown2-2 {
+  width: 192px;
+  height: 250px;
+  float: left; }
+
+.header #down .uldown .lidown .uldown3 {
+  float: left;
+  width: 334px;
+  margin-top: 50px;
+  margin-left: 50px; }
+
+.header #down .uldown .lidown .uldown3 a {
+  font-size: 20px; }
+
+.header #down .uldown .lidown .uldown4 {
+  float: left;
+  width: 384px;
+  text-align: center;
+  margin-top: 30px; }
+
+#ball {
+  display: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: red;
+  position: absolute;
+  z-index: 10; }
+
+.right_fixed {
+  width: 60px;
+  height: 182px;
+  background: #0197d6;
+  position: fixed;
+  right: 0;
+  top: 33%;
+  z-index: 999; }
+
+.right_fixed .consult > dd {
+  height: 60px;
+  width: 60px;
+  border-bottom: 1px dashed #fff;
+  font-size: 35px;
+  text-align: center;
+  color: #fff;
+  position: relative; }
+
+.right_fixed .consult > dd:nth-child(3) {
+  border: 0px; }
+
+.right_fixed .consult > dd > p {
+  font-size: 14px; }
+
+.right_fixed .consult > dd > div {
+  position: absolute;
+  right: 60px;
+  background: red;
+  top: 0px;
+  display: none;
+  border: 1px solid #0197d6; }
+
+.right_fixed .consult .purchase {
+  background: #fff;
+  border: 1px solid blue; }
+
+.right_fixed .consult .on_line {
+  background: #fff;
+  border: 1px solid blue; }
+
+.right_fixed .consult .after_sale {
+  background: #fff;
+  width: 280px;
+  border: 1px solid blue;
+  top: -145px; }
+
+.right_fixed .consult .after_sale1 {
+  float: left; }
+
+.right_fixed .consult .after_sale2 {
+  float: left;
+  width: 100px;
+  text-align: center; }
+
+.right_fixed .consult .after_sale2 button {
+  width: 100px;
+  border: 0;
+  background: #0197d6;
+  cursor: pointer; }
+
+.right_fixed .consult .after_sale2 p {
+  font-size: 12px;
+  color: black; }
+
+.right_fixed .consult > dd > div ul li {
+  font-size: 12px;
+  width: 150px;
+  color: black;
+  line-height: 20px;
+  border-bottom: 1px solid #0197d6;
+  padding: 10px;
+  border-right: 1px solid #0197d6; }
+
+.right_fixed .consult > dd > div ul li button {
+  width: 80px;
+  border: 0;
+  background: #0197d6;
+  border-radius: 4px;
+  cursor: pointer; }
+
+.right_fixed .consult > dd > div ul li a {
+  display: block;
+  color: blue;
+  cursor: pointer; }
+
+.right_fixed #Up_Arrow {
+  width: 60px;
+  height: 20px;
+  background: #aaaaab;
+  border: 0px;
+  cursor: pointer;
+  display: none; }

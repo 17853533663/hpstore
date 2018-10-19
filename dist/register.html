@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>注册</title>
+	<link rel="stylesheet" href="css/register.min.css">
+	<link rel="stylesheet" href="css/header.min.css">
+	<link rel="stylesheet" href="iconfont/iconfont.css">
+	<script src="js/require.js" async="true" defer data-main="js/mainregister"></script>
+</head>
+<body>
+<!-- content -->
+	<div class="content">
+		<h1>创建帐户</h1>
+		<div class="account">
+				<ul class="message">
+					<li>
+						<span>电子邮件地址 *</span>
+						<input type="type" id="username" name="username">@
+						<select name="地址" id="">
+							<option value="">qq.com</option>
+							<option value="">126.com</option>
+							<option value="">163.com</option>
+							<option value="">sina.com</option>
+						</select>
+						<p id="username_p"></p>
+					</li>
+					<li>
+						<span>滑动验证 *</span>
+						<div id="dragContainer">
+        					<div id="dragBg"></div>
+        					<div id="dragText"></div>
+       						<div id="dragHandler" class="dragHandlerBg"></div>
+   						</div>
+					</li>
+					<li>
+						<span>电话 *</span>
+						<input type="text" value="+86">
+						<input type="text" id="phone" name="phone">
+						<p id="phone_p"></p>
+					</li>
+					<li style="border-bottom:1px solid black;padding-bottom:50px;">
+						<span>短信验证码 *</span>
+						<input type="text" id="verification">
+						<span id="button">获取验证码</span>
+						<div style="width:50px;height:20px;border:1px solid black;display:inline-block;" id="note"></div>
+						<p id="verification_p"></p>
+					</li>
+					<li style="border-bottom:1px solid black;padding-bottom:50px;">
+						<span>ISR ID</span>
+						<input type="text">
+					</li>
+					<li>
+						<span>密码 *</span>
+						<input type="password" id="password" name="password">
+						<p id="password_p"></p>
+					</li>
+					<li style="border-bottom:1px solid black;padding-bottom:50px;">
+						<span>确认密码 *</span>
+						<input type="password" id="passwordAgain" name="passwordAgain">
+						<p id="passwordAgain_p"></p>
+					</li>
+				</ul>
+				<div class="message2"><input type="checkbox">我已阅读并接受 <a href="">条款和条件</a> 和 <a href="">隐私政策</a></div>
+				<div class="message3"><input type="checkbox" checked="checked" id="check">是的，请向我发送惠普的促销，新闻和产品支援更新。请查看<a href="">惠普隐私声明</a>，了解有关自动数据收集工具和惠普隐私惯例的更多信息。</div>
+				<button id="register">注册</button>
+		</div>
+		<div class="benefits"><img src="images/benefits.jpg" alt=""></div>
+	</div>
+</body>
+</html>
