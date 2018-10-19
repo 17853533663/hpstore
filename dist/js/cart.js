@@ -13,9 +13,6 @@ define(["header","jquery","jquery-cookie"],function(header,$){
 						if(sc_arr){
 							for(var i = 0; i < sc_arr.length; i++){
 								var all_price=parseInt(res[sc_arr[i].id].price)*parseInt(sc_arr[i].num);
-								// price=parseInt(res[sc_arr[i].id].price)
-								// num=parseInt(sc_arr[i].num)
-								// alert(price)
 								html += `<li>
 								<img src="${res[sc_arr[i].id].images}" alt="">
 								<p>${res[sc_arr[i].id].name}</p>
@@ -32,6 +29,8 @@ define(["header","jquery","jquery-cookie"],function(header,$){
 							$(".cart_left ul").html(html);
 
 						}
+
+
 						
 						// 增加数量
 						$(".add").click(function(){
@@ -39,11 +38,9 @@ define(["header","jquery","jquery-cookie"],function(header,$){
 							var arr = eval(cookieStr);
 
 							var id = arr[$(this).parent().parent().index()].id;
-							var same = false;
 							for(var i = 0;i<arr.length;i++){
 								if(arr[i].id==id){
 									arr[i].num++;
-									same=true;
 									break;
 								}
 							}
@@ -60,9 +57,6 @@ define(["header","jquery","jquery-cookie"],function(header,$){
 							var cookieStr = $.cookie("goods");
 							var arr = eval(cookieStr);
 							var id = arr[$(this).parent().parent().index()].id;
-							var cookieStr = $.cookie("goods");
-							var arr = eval(cookieStr);
-							var same = false;
 							for(var i = 0;i<arr.length;i++){
 								if(arr[i].id==id){
 									arr[i].num--;
@@ -71,7 +65,6 @@ define(["header","jquery","jquery-cookie"],function(header,$){
 									}else{
 										location.reload();
 									}
-									same=true;
 									break;		
 								}
 							}
@@ -103,6 +96,25 @@ define(["header","jquery","jquery-cookie"],function(header,$){
 							sum += price
 						})
 						$(".sum").html(sum)
+
+						// 输入框的值手动改变
+						$(".sc_goodsNum").change(function(){
+							var cookieStr = $.cookie("goods");
+							var arr = eval(cookieStr);
+							var id = arr[$(this).parent().index()].id;
+							// alert($(this).val())
+							for(var i = 0;i<arr.length;i++){
+								if(arr[i].id==id){
+									arr[i].num=parseInt($(this).val());
+									break;
+								}
+							}
+							location.reload();
+							$.cookie("goods",JSON.stringify(arr),{
+								expires:7,
+								raw:true
+							});	
+						})
 						
 					}
 				})

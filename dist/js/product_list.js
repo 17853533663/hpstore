@@ -167,7 +167,7 @@ define(["header","jquery","jquery-cookie"],function(header,$){
 					$(".product_list_content12").find("dd").css("display","block");
 					$(this).find(".down").css("z-index","1");
 					product_list_content12= 1;
-				}
+				} 
 			})
 
 			var product_list_content13= 1;
@@ -242,7 +242,7 @@ define(["header","jquery","jquery-cookie"],function(header,$){
 							<li>${res[i].li3}</li>
 							<li>${res[i].li4}</li>
 						</ul>
-						<h2>${res[i].price}</h2>
+						<h2>￥ <span>${res[i].price}</span></h2>
 						<button class="sc_btn" id="${res[i].id}">添加到购物车</button>
 					</div>
 					<h6 class="new">新品</h6>
@@ -278,7 +278,7 @@ define(["header","jquery","jquery-cookie"],function(header,$){
 							<li>${res[i].li3}</li>
 							<li>${res[i].li4}</li>
 						</ul>
-						<h2>${res[i].price}</h2>
+						<h2>￥ <span>${res[i].price}</span></h2>
 						<button class="sc_btn" id="${res[i].id}">添加到购物车</button>
 					</div>
 					<h6 class="new">新品</h6>
