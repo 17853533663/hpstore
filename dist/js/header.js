@@ -265,38 +265,6 @@ define(["jquery","jquery-cookie"],function($){
 				sc_car();
 			})
 
-			$(".product_img").on("click",".sc_btn",function(){
-				ballMove(this);
-				var id = this.id;
-				var first = $.cookie("goods") == null ? true :false;
-				if(first){
-					$.cookie("goods",`[{id:${id},num:1}]`,{
-						expires:7,
-						raw:true
-					});
-				}else{
-					var cookieStr = $.cookie("goods");
-					var arr = eval(cookieStr);
-					var same = false;
-					for(var i = 0;i<arr.length;i++){
-						if(arr[i].id==id){
-							arr[i].num++;
-							same=true;
-							break;
-						}
-					}
-					if(!same){
-						var obj = {id:id,num:1};
-						arr.push(obj);
-					}
-					$.cookie("goods",JSON.stringify(arr),{
-						expires:7,
-						raw:true
-					});
-				}
-				sc_car();
-			})
-
 			$(".configuration2").on("click",".sc_btn",function(){
 				ballMove(this);
 				var id = this.id;
